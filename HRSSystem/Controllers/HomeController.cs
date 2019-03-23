@@ -26,5 +26,16 @@ namespace HRSSystem.Controllers
 
             return View();
         }
+
+        public ActionResult GenerateError()
+        {
+            int val1 = 42;
+            int val2 = 0;
+
+            int val3 = val1 / val2;
+
+            return View(val3);
+        }
+
     }
 }
